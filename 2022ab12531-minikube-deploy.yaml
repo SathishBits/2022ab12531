@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: 2022ab12531-sathish-kumar
+  name: 2022ab12531-sathish-anish
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: 2022ab12531-sathish-kumar
+      app: 2022ab12531-sathish-anish
   template:
     metadata:
       labels:
-        app: 2022ab12531-sathish-kumar
+        app: 2022ab12531-sathish-anish
     spec:
       containers:
-        - name: 2022ab12531-sathish-kumar
-          image: 2022ab12531/2022ab12531-sathish-kumar:latest
+        - name: 2022ab12531-sathish-anish
+          image: sathishbits/2022ab12531-sathish-anish:latest
           ports:
             - containerPort: 5000
