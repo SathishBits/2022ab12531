@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: 2022ab12531-sathish-kumar
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: 2022ab12531-sathish-kumar
+  template:
+    metadata:
+      labels:
+        app: 2022ab12531-sathish-kumar
+    spec:
+      containers:
+        - name: 2022ab12531-sathish-kumar
+          image: 2022ab12531/2022ab12531-sathish-kumar:latest
+          ports:
+            - containerPort: 5000
